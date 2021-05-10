@@ -7,7 +7,6 @@ services:
     environment:
       MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: flukefriendbest
-      MYSQL_DATABASE: project
     volumes:
         - "./script/ppclothesDB.sql:/docker-entrypoint-initdb.d/ppclothesDB.sql"
         - "./script/grantUsers.sql:/docker-entrypoint-initdb.d/grantUsers.sql"
