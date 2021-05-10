@@ -11,7 +11,6 @@ services:
       MYSQL_DATABASE: project
     volumes: 
       - "./script/ppclothesDB.sql:/docker-entrypoint-initdb.d/ppclothesDB.sql"
-      - "./script/grantUsers.sql:/docker-entrypoint-initdb.d/grantUsers.sql"
     ports:
       - "3306:3306"
 
