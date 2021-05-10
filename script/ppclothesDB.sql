@@ -3,20 +3,20 @@
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
 
--- SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
--- SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
--- SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
 -- Schema project
 -- -----------------------------------------------------
--- DROP SCHEMA IF EXISTS `project` ;
+DROP SCHEMA IF EXISTS `project` ;
 
 -- -----------------------------------------------------
 -- Schema project
 -- -----------------------------------------------------
--- CREATE SCHEMA IF NOT EXISTS `project` DEFAULT CHARACTER SET utf8 ;
--- USE `project` ;
+CREATE SCHEMA IF NOT EXISTS `project` DEFAULT CHARACTER SET utf8 ;
+USE `project` ;
 
 -- -----------------------------------------------------
 -- Table `project`.`Brand`
@@ -148,9 +148,9 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `project`;
-INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (1, 'MONOGRAM OMBRE SILK PAJAMA TOP', 'The House’s iconic Monogram motif is playfully scaled-up and printed in a summery ombre effect to give this short-sleeved pajama top a fresh lounge feel. Cut from comfortable, lightweight silk that further relaxes the boxy silhouette. White piping and a front patch pocket refine the easy-to-wear style.', 73,999.00, '2021-02-23', '1234', 1);
-INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (2, 'GALAXY PRINT MIXED-MATERIAL T-SHIRT', 'The playful graphic on this mixed-material T-shirt is inspired by comic books: vibrant LV Initials and Monogram Flowers collide with stars and planets on printed silk twill. The contrasting back is cut slightly longer, in cotton jersey. The silhouette is relaxed and roomy. The top square button on the shoulder is engraved with a House signature.', 3,039,900.00, '2020-03-30', '1234', 1);
-INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (3, 'MIXED KNIT LIGHTWEIGHT SUMMER PULLOVER', 'Different textures and tones of natural fibers combine to create this summer pullover. The shoulders and left sleeve stand out in contrast cotton poplin, while a mix of knitted cotton panels complete the silhouette. The collection’s essential leather Monogram patch signs the chest.', 80,880.00, '2019-06-15', '1234', 1);
+INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (1, 'MONOGRAM OMBRE SILK PAJAMA TOP', 'The House’s iconic Monogram motif is playfully scaled-up and printed in a summery ombre effect to give this short-sleeved pajama top a fresh lounge feel. Cut from comfortable, lightweight silk that further relaxes the boxy silhouette. White piping and a front patch pocket refine the easy-to-wear style.', 73999.00, '2021-02-23', '1234', 1);
+INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (2, 'GALAXY PRINT MIXED-MATERIAL T-SHIRT', 'The playful graphic on this mixed-material T-shirt is inspired by comic books: vibrant LV Initials and Monogram Flowers collide with stars and planets on printed silk twill. The contrasting back is cut slightly longer, in cotton jersey. The silhouette is relaxed and roomy. The top square button on the shoulder is engraved with a House signature.', 3039900.00, '2020-03-30', '1234', 1);
+INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (3, 'MIXED KNIT LIGHTWEIGHT SUMMER PULLOVER', 'Different textures and tones of natural fibers combine to create this summer pullover. The shoulders and left sleeve stand out in contrast cotton poplin, while a mix of knitted cotton panels complete the silhouette. The collection’s essential leather Monogram patch signs the chest.', 80880.00, '2019-06-15', '1234', 1);
 INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (4, 'SHEIN Slogan Graphic Hoodie', 'Wide top in sweatshirt fabric with a lined, drawstring hood, long raglan sleeves and ribbing at the cuffs and hem. Soft brushed inside.', 380.00, '2020-12-23', '1234', 2);
 INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (5, 'SHEIN Twist Hem Rib-knit Tee', 'Short twist in a soft, fine knit with a lightly brushed finish. Round neckline and long sleeves.', 160.00, '2019-11-06', '1234', 2);
 INSERT INTO `project`.`Product` (`idPro`, `proName`, `proDescript`, `proPrice`, `proMFD`, `proPathImg`, `Brand_idBrand`) VALUES (6, 'SHEIN Ribbed Mock Neck Lettuce-Edge Top', 'Short Lettuce Trim in soft cotton jersey with overlocked edges.', 180.00, '2021-08-09', '1234', 2);
